@@ -9,10 +9,10 @@ def nyc_pigeon_organizer(data)
     data.each do |data_key, value|
       data_key.each do |key,value|
         if key.values.include?(pigeon_names[i])
-          binding.pry
           pigeon_list[pigeon_names[i]][data_key] = []
           pigeon_list[pigeon_names[i]][data_key] = pigeon_list[pigeon_names[i]][data_key].push(key.to_s)
         end
+        binding.pry
         i += 1 
       end
     end
