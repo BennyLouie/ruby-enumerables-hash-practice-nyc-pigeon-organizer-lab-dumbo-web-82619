@@ -15,10 +15,10 @@ def nyc_pigeon_organizer(data)
       # i += 1 
       # end
       value.each do |name|
-        if pigeon_list.key?(name)
+        if pigeon_list.has_key?(name)
           pigeon_list[name][data_key] = []
           pigeon_list[name][data_key].push(key.to_s)
-        elsif !pigeon_list.key?(name)
+        elsif !pigeon_list.has_key?(name)
           pigeon_list[name] = data_key
           pigeon_list[name][data_key] = []
           pigeon_list[name][data_key].push(key.to_s)
