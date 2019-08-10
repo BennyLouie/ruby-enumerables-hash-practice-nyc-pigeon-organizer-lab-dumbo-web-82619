@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   pigeon_names = []
   i = 0 
   pigeon_names = data[:gender].values[0] | data[:gender].values[1]
-  data.each do |data_key, value|
+  data.each do |data_key, data_value|
     binding.pry
     data_key.each do |key,value|
       while i < pigeon_names.length do
