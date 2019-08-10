@@ -12,9 +12,9 @@ def nyc_pigeon_organizer(data)
           pigeon_list[pigeon_names[i]][data_key] = []
           pigeon_list[pigeon_names[i]][data_key] = pigeon_list[pigeon_names[i]][data_key].push(key.to_s)
         end
-        binding.pry
         i += 1 
       end
+      binding.pry
     end
   end
   pigeon_list
