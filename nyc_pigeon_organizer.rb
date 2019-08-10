@@ -5,7 +5,6 @@ def nyc_pigeon_organizer(data)
   data.each do |data_key, data_value|
     data_value.each do |key, value|
       value.each do |name|
-        binding.pry
         if pigeon_list.has_key?(name)
           if pigeon_list[name].has_key?(name)
             pigeon_list[name][data_key].push(key.to_s)
