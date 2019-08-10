@@ -7,5 +7,5 @@ def nyc_pigeon_organizer(data)
   pigeon_lives = []
   pigeon_names = data[:gender].values[0] | data[:gender].values[1]
   binding.pry
-  
+  if data[:]
 end
