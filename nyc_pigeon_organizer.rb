@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
       # i += 1 
       # end
       value.each do |name|
-        if 
+        if pigeon_list
     end
   end
   pigeon_list
