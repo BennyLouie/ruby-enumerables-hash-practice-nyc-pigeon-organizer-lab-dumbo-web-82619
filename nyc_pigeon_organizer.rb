@@ -9,6 +9,9 @@ def nyc_pigeon_organizer(data)
         if pigeon_list.has_key?(name)
           if pigeon_list[name].has_key?(data_key)
             pigeon_list[name][data_key].push(key.to_s)
+          elsif !pigeon_list[name].has_key?(data_key)
+            pigeon_list[name][data_key] = []
+            pigeon_list[name][data_key].push(key.to_s)
           end
         elsif !pigeon_list.has_key?(name)
           pigeon_list[name] = {}
