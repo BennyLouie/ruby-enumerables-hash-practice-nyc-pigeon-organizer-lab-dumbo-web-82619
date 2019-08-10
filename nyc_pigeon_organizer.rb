@@ -15,6 +15,7 @@ def nyc_pigeon_organizer(data)
       # i += 1 
       # end
       value.each do |name|
+        binding.pry
         if pigeon_list.has_key?(name)
           pigeon_list[name][data_key] = []
           pigeon_list[name][data_key].push(key.to_s)
