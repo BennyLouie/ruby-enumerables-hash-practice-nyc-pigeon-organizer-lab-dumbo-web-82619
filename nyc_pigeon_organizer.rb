@@ -8,5 +8,5 @@ def nyc_pigeon_organizer(data)
   while i < pigeon_names.length do 
     data.each do |key, value|
       key.each do |key,value|
-        if key.values
+        if key.values.include?()
 end
