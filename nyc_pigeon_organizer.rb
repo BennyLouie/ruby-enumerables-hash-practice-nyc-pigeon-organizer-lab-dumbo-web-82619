@@ -1,3 +1,10 @@
+require 'pry' 
+
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  pigeon_list = {}
+  pigeon_names = []
+  pigeon_names.push(data[:gender].values)
+  binding.pry
+  pigeon_names
+  
 end
