@@ -6,7 +6,6 @@ def nyc_pigeon_organizer(data)
   i = 0 
   pigeon_names = data[:gender].values[0] | data[:gender].values[1]
   data.each do |data_key, data_value|
-    binding.pry
     data_value.each do |key,value|
       while i < pigeon_names.length do
         if key.values.include?(pigeon_names[i])
