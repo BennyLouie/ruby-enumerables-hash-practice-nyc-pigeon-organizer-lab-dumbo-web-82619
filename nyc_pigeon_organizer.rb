@@ -9,8 +9,8 @@ def nyc_pigeon_organizer(data)
     data_value.each do |key, value|
       binding.pry
       while i < pigeon_names.length do
+        pigeon_list[pigeon_names[i]][data_key] = []
         if value.include?(pigeon_names[i])
-          pigeon_list[pigeon_names[i]][data_key] = []
           pigeon_list[pigeon_names[i]][data_key].push(key.to_s)
         end
       i += 1 
