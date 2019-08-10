@@ -19,7 +19,8 @@ def nyc_pigeon_organizer(data)
           pigeon_list[name][data_key] = []
           pigeon_list[name][data_key].push(key.to_s)
         elsif !pigeon_list.key?(name)
-        pigeon_list[name] = data_key
+          pigeon_list[name] = data_key
+        end
       end
     end
   end
